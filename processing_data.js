@@ -1,5 +1,7 @@
-exports.originalArray = function(contents) {
-  var lines = contents.split("\n");
+var fs = require("fs");
+exports.originalArray = function(filePath) {
+  var content = fs.readFileSync(filePath, 'utf8');
+  var lines = content.split("\n");
   var objectArray = [];
   for (var i = 1; i < lines.length - 1; i++) {
     var salesArray = lines[i].split(',');

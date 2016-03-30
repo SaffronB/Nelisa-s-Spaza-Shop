@@ -1,8 +1,6 @@
 var assert = require("assert");
-var nelisa = require("../nelisa.js");
+var processing = require("../processing_data.js");
 var fs = require("fs");
-
-
 
 
 
@@ -11,8 +9,8 @@ describe("For the first round of data processing,", function() {
 
   it('I should create an object with the information of each product', function() {
 
-    var contents = fs.readFileSync('./files/week1.csv', 'utf8');
-    var result = nelisa.originalArray(contents);
+    var result = processing.originalArray('./files/week1.csv');
+
 
 
     assert.deepEqual(result[0], {
@@ -28,15 +26,15 @@ describe("For the first round of data processing,", function() {
   });
 
   it('I should create a unique product array', function() {
-    var contents = fs.readFileSync('./files/week1.csv', 'utf8');
-    var result = nelisa.uniqueProducts(nelisa.originalArray(contents));
+  
+    var result = processing.uniqueProducts(processing.originalArray('./files/week1.csv', 'utf8'));
     assert.deepEqual(result[1], 'Imasi');
 
   });
 
   it('I should find the most popular product', function() {
-    var contents = fs.readFileSync('./files/week1.csv', 'utf8');
-    var result = nelisa.popularProducts(nelisa.originalArray(contents));
+
+    var result = processing.popularProducts(processing.originalArray('./files/week1.csv', 'utf8'));
     assert.equal(result, 'Coke 500ml');
   });
 
