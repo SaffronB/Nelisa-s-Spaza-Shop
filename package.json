@@ -1,0 +1,25 @@
+{
+  "name": "nelisa",
+  "version": "1.0.0",
+  "description": "Nelisa's spaza shop needs a new system to help assess what the most popular products are. # Nelisa-s-Spaza-Shop",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaffronB/Nelisa-s-Spaza-Shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaffronB/Nelisa-s-Spaza-Shop/issues"
+  },
+  "homepage": "https://github.com/SaffronB/Nelisa-s-Spaza-Shop#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

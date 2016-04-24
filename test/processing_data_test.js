@@ -13,7 +13,6 @@ var purchases = processing_data.productPurchases('./files/purchases.csv', 'utf8'
 var profitprofit = processing_data.profits(('./files/week1.csv'), output, purchases);
 var cP = processing_data.categoryProfits(('./files/week1.csv'), profitprofit, categoryLinkedProducts);
 
-
 describe("For the first round of data processing,", function() {
 
   it("I should break down the weekly csv sales files into an object with the product's details", function() {

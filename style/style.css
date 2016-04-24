@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400);
+html {
+  background-color:#1A5C98;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+body{
+  background-color: white;
+}
+
+.name {
+    font-size: 60px;
+    font-family: "Open Sans", Helvetica,Arial,sans-serif;
+    margin-left: 210px;
+    color: #1A5C98;
+}
+
+.container {
+  /*margin-top: 100px;
+  float: inherit;*/
+  /*margin-right: 600px;*/
+  /*margin-right: 200px;*/
+  background-color: white;
+}
